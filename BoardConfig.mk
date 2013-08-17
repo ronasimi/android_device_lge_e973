@@ -13,14 +13,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-
-BOARD_KERNEL_CMDLINE := console=ttySHL0,115200,n8 androidboot.hardware=e973 lpj=67677
+BOARD_KERNEL_CMDLINE := vmalloc=600M console=null lpj=67677 user_debug=31 msm_rtb.filter=0x0 ehci-hcd.park=3 coresight-etm.boot_enable=0 androidboot.hardware=e973
 BOARD_KERNEL_BASE := 0x80200000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
+BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 
-TARGET_KERNEL_CONFIG := cyanogenmod_e973_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/ls970
+# Try to build the kernel
+TARGET_KERNEL_SOURCE := kernel/lge/gproj
+TARGET_KERNEL_CONFIG := cyanogenmod_e970_defconfig
+
 
 # inherit from ls970-common
 -include device/lge/ls970-common/BoardConfigCommon.mk
@@ -32,4 +33,4 @@ TARGET_OTA_ASSERT_DEVICE := geebus,geebusc,geeb,gee_sp,e973,jeebus,jeebusc,geeb_
 TARGET_BOARD_INFO_FILE := device/lge/e973/board-info.txt
 
 # inherit from the proprietary version
--include vendor/lge/ls970/BoardConfigVendor.mk
+-include vendor/lge/e975/BoardConfigVendor.mk
