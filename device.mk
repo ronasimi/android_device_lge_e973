@@ -42,10 +42,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=9 \
     ro.ril.def.preferred.network=9
 
-# Vold configuration
-PRODUCT_COPY_FILES += \
-    device/lge/e973/vold.fstab:system/etc/vold.fstab
-
 # GPS configuration
 PRODUCT_COPY_FILES += \
         device/lge/e973/configs/gps.conf:system/etc/gps.conf
