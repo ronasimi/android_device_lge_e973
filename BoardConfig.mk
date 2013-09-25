@@ -22,6 +22,9 @@ BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000
 TARGET_KERNEL_SOURCE := kernel/lge/gproj
 TARGET_KERNEL_CONFIG := cyanogenmod_e970_defconfig
 
+# Recovery
+TARGET_RECOVERY_FSTAB := device/lge/e973/ramdisk/fstab.e973
+RECOVERY_FSTAB_VERSION := 2
 
 # inherit from ls970-common
 -include device/lge/ls970-common/BoardConfigCommon.mk
