@@ -43,11 +43,6 @@ PRODUCT_COPY_FILES += \
     device/lge/e973/ramdisk/ueventd.e973.rc:root/ueventd.e973.rc \
     device/lge/e973/ramdisk/fstab.e973:root/fstab.e973
 
-#init.d tweaks
-PRODUCT_COPY_FILES += \
-    device/lge/e973/init.d/99kerneltweaks:system/etc/init.d/99kerneltweaks \
-    device/lge/e973/init.d/98netflix:system/etc/init.d/98netflix
-
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
    frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
