@@ -15,6 +15,7 @@
 #
 
 BOARD_KERNEL_CMDLINE := vmalloc=600M console=null lpj=67677 user_debug=31 msm_rtb.filter=0x0 ehci-hcd.park=3 coresight-etm.boot_enable=0 androidboot.hardware=e973
+TARGET_ARCH_VARIANT_CPU := cortex-a15
 TARGET_KERNEL_CONFIG := gproj-x_e973_defconfig
 
 # Recovery
