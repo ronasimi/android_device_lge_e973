@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/mahdi/config/common_full_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/mahdi/config/nfc_enhanced.mk)
+#$(call inherit-product, vendor/mahdi/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/e973/full_e973.mk)
