@@ -1,7 +1,7 @@
 [
  {
    "repository": "lge-kernel-gproj",
-   "target_path": "kernel/lge/gproj"
+   "target_path": "kernel/lge/gprojx"
  },
  {
    "repository": "android_device_lge_ls970-common",
