@@ -34,3 +34,9 @@ on init
     symlink /storage/emulated/legacy /mnt/sdcard
     symlink /storage/emulated/legacy /storage/sdcard0
     symlink /mnt/shell/emulated/0 /storage/emulated/legacy
+
+service thermald /system/bin/thermald
+    class main
+
+service mpdecision /system/bin/mpdecision --no_sleep --avg_comp
+    class main
