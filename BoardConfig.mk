@@ -22,6 +22,9 @@ TARGET_KERNEL_CONFIG := gprojx_defconfig
 TARGET_RECOVERY_FSTAB := device/lge/e973/ramdisk/fstab.e973
 RECOVERY_FSTAB_VERSION := 2
 
+# Use the CM PowerHAL
+TARGET_POWERHAL_TOUCH_BOOST := true
+
 # inherit from ls970-common
 -include device/lge/ls970-common/BoardConfigCommon.mk
 
